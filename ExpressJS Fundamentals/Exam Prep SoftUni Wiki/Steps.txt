@@ -1,0 +1,68 @@
+Add css and img to static folder
+
+Create articles folder in views -> add all-articles.html, article.html, create.html, edit.html, history.html
+
+In all-articles.html we copy the content and paste it in layouts main.hbs
+
+delete content of main TAG and add {{{body}}}
+
+add {{{#if}}} for the create article
+
+add {{{#if}}} for the header part -> if currentUser
+
+configure the path e.g -> <a href="/article/all">All Articles</a>
+
+copy all the content from main tag in the given resource index.html and paste it in views/home/index.hbs
+^ copy all of main from login.html and paste it in login.hbs AND ADD FORM ACTION AND METHOD!!!
+add name to input 
+^ copy all of main from register.html and paste it in register.hbs AND ADD FORM ACTION AND METHOD AND NAME AND ID FFS!!!
+
+We need email not username and are not gonna use firstname and lastName so we remove the names and replace username wiht email in User.js
+In user.controller do the same thing ^
+
+Check if your monstrosity works..
+
+In models create Article.js
+Write articleSchema
+
+add edits to UserSchema in Users
+
+create Edit.js in models and write editSchema
+
+create article-controller in controllers
+
+require the article-controller in index.js(controllers)
+
+add the articles in routes.js
+
+if we dont have login/register with username but with email change the passport.js file from username->email
+
+create.html -> create.hbs and add form action, method and name for input title and textarea
+
+createArticlePost in article controller
+
+fix index.hbs in home
+
+write the content in home-controller
+
+write listAll and then change the all-articles.html to.hbs and remove everything except the main tag content
+
+write displayArticle
+
+fix article.html -> article.hbs and content	
+
+fix the edit.html => edit.hbs and content
+
+write editArticleGet in article-controller
+
+write editArticlePost in article-controller
+
+write locn and unlock
+
+fix search-results.html -> search-results.hbs and content
+
+in main.hbs in the form add action for /search
+
+add search to routes
+
+in home-controller create search

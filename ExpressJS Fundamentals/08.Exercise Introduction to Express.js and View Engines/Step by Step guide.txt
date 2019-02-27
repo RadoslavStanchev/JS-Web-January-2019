@@ -1,0 +1,22 @@
+01. Run npm install 
+02. In controllers/home.js add module.exports and the homeGet function /// p.s when we add 'index' it searches it in views by default
+03.In config -> routes.js require from controllers -> home.js
+03.1. in module exports type: add.get('/');
+04.We create a in views a folder named 'layouts'and in it we create a file with the smae name given in the express.js file -> main.hbs
+4.1 We copy everything from index.hbs and paste it in main.hbs -> we delete the content in the main tag -> replace it with {{{body}}}
+4.2 In index.hbs leave only the content of the main tag and leave the content of the main tag in the other .hbs files
+5. In home.js we can add res.locals.globalError. Create about and search 
+5.1 in main.hbs in the main tag add a hbs #if and add the class error
+6. Create in folder models - > Cube.js or CubeSchema.js
+6.1. We require mongoose and  mongoose.Schema, then we create cubeSchmema with the names given to us in the description of the project. Then we validate each of them by giving an error message that is given to us again or we create a meaningful message by ourselves.
+6.2. Create Cube model  and export it.
+7. In the .hbs files where the are forms in the exam there won't be given the method and action which means we need to write them ourselves. The name attributes will not be given as well so we should remember to write them as well. NAME ATTRIBUTES MUST BE EQUAL TO THE MODEL NAME E.G = imageUrl name in create.hbs should be equal to imageUrl in the models
+8.Create new file cube.js in controllers.
+8.1 Create createGet, createPost and details. When we render createGet we add ('cube/create') , by default it searches them in views but we created a new folder so we should define the full path.
+9.In config import cubeController for controllers/cube and then write app.get and app.post AND CHECK IF THE ADD CUBE PAGE IS WORKING IF IT IS CONTINUE
+10.Add content for createPost in cube.js
+
+
+P.S If we want the iformation form the fields to not get deleted when we refresh or when it gives an error we go to the .hbs with the form and we add value={{name/desciption or w/e the name is}}  in the input tag
+
+11. Fix the templates in index.hbs
