@@ -1,0 +1,9 @@
+.Create form {
+  display: grid;
+  width: 25%;
+  margin: 0 auto;
+}
+
+.Create input {
+  padding: 10px;
+}

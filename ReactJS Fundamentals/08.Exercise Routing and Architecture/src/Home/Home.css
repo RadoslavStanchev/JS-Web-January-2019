@@ -1,0 +1,19 @@
+.Home {
+  text-align: center;
+}
+
+.Home div.movies {
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.Home div.movie {
+  display: grid;
+}
+
+.Home .trailer {
+  margin: 0 auto;
+}
