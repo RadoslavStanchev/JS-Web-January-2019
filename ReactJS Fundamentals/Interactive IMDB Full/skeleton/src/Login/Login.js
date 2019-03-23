@@ -50,7 +50,7 @@ class Login extends Component {
         </form>
       </div>
     );
-  }
+    }
 }
 
 export default Login;
