@@ -1,0 +1,11 @@
+<div class="card mb-3">
+  <img style="height: 200px; width: 100%; display: block;" [src]="imagePath" alt="Card image">
+  <h3 class="card-header">{{movie.title}}</h3>
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <h6>Release date: {{movie.release_date}}</h6>
+  <div class="card-footer text-muted">
+    <button class="btn btn-primary" routerLink="/movies/{{movie.id}}">View Details</button>
+  </div>
+</div>
